@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>일반/공학화학 및 실험 계산기</title>
+    <link href="css\style_common.css" rel="stylesheet" type="text/css"></link>
+    <link href="css\style_page.css" rel="stylesheet" type="text/css"></link>
+    <!--<link href="css\style_p1.css" rel="stylesheet" type="text/css"></link>-->
+    <link rel="shortcut icon" href="res\makefg.png"></link>
+    <script src="src\src_common.js"></script>
+    <a id=pagenum name=1></a>
+    <!--chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <!--mathjax.js-->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class=header>
+        <h2 id=small_headline>알코올의 증류</h2>
+        <h1 id=headline>일반·공학화학 및 실험(1)</h1>
+    </div>
+    <div class=block>
+        <dl>
+          <dt class=common_heading>실험 결과</dt>
+          <dd class=common_strapline>1) 시간에 따른 플라스크 내의 온도 변화 (온도 유효숫자 3자리)</dd>     
+        </dl>
+
+        <dl>
+          <center>
+            <button class=submit_button onclick="submit3_1()">계산하기</button>
+            <button class=clear_button onclick="clear_all()">초기화</button>
+         </center>
+        </dl> 
+    </div>
+    <div class=footer>
+      <p>contact me : yheewon@yonsei.ac.kr</p>
+      <p>해당 사이트는 오차가 있을 수 있으니 참고용으로만 쓰시길 바랍니다.</p>
+    </div>
+  </body>
+</html>

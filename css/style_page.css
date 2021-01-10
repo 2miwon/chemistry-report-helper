@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+.outStyle{
+  margin: 0;
+  font-size: 50px;
+  color : black;
+  margin: 30px;
+}
+
+.inStyle{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.essential{
+  border: none;
+  border-bottom: 2px solid black;
+  width: 150px;
+  font-size: 20px;
+  height: 30px;
+}
+
+table{
+  table-layout: fixed;
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: '맑은 고딕';
+  word-break: break-all;
+}
+
+table tr, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  height: 60px;
+  text-align: center;
+}
+
+th{
+  background-color: #c0c0c0; 
+}
+
+table input{
+  width:95%;
+  height:100%;
+  font-size: 20px;
+  align-items: center;
+  border: none;
+  text-align: center;
+}
+
+
+input:focus{
+  outline:none;
+}
+
+#headline{
+  color:white;
+  text-align: right;
+  padding-right: 50px;
+  margin-left: 0px;
+}
+
+#small_headline{
+  color:white;
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 40px;
+  margin-left: 0px;
+}
+
+
+.common_heading{
+  font-family: '함초롬돋움';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 3;
+}
+
+.common_strapline{
+  font-family: '맑은고딕';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.middle_heading{
+  font-family: '함초롬돋움';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 3;
+  text-align: center;
+}
+
+/*
+.common_contents{
+}
+#url{
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 100px;
+  align-items: center;
+}
+*/
+
+.block{
+  margin-left: 20%;
+  margin-top: 100px;
+  margin-right: 20%;
+}
+
+.common_input{
+  text-align: left;
+}
+
+button{
+  display: inline;
+  align-content: center;
+  align-items: center;
+  font-size: 23px;
+  margin-top: 50px;
+}
+
+.clear_button{
+  margin-left: 10px;
+  height: 90px;
+  width: 150px;
+}
+
+.submit_button{
+  height: 90px;
+  width: 150px;
+}
+
+.excel_button{
+  background-color: #1D6F42;
+  color: white;
+  border-color: white;
+  height: 90px;
+  width: 250px;
+}
+
+/*
+.excel_button:focus{
+
+}*/
+
+dl{
+  margin-top: 50px;
+}
+
+.output{
+  color: #38B63C;
+}
+
+.middle_str{
+  padding-left: 25px;
+  font-family: '맑은고딕';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.inStyle .output{
+  font-size: 25px;
+}
+
+[name="outmod"]{
+  display: none;
+}
+
+table input[class = essential]{
+  width:95%;
+  height:100%;
+  font-size: 20px;
+  align-items: center;
+  border: none;
+  text-align: center;
+}
+
+table a{
+  width: none;
+  margin: 0;
+}

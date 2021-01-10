@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>일반/공학화학 및 실험 계산기</title>
+    <link href="css\style_common.css" rel="stylesheet" type="text/css"></link>
+    <link href="css\style_page.css" rel="stylesheet" type="text/css"></link>
+    <!--<link href="css\style_p1.css" rel="stylesheet" type="text/css"></link>-->
+    <link rel="shortcut icon" href="res\makefg.png"></link>
+    <script src="src\src_common.js"></script>
+    <a id=pagenum name=4></a>
+    <!--mathjax.js-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  </head>
+
+  <body>
+    <div class=header>
+        <h2 id=small_headline>생활 속의 산-염기 분석</h2>
+        <h1 id=headline>일반·공학화학 및 실험(1)</h1>
+    </div>
+    <div class=block>
+        <dl>
+          <dt class=common_heading>실험 결과</dt>
+        </dl>
+        <dl>
+          <dd class=common_strapline>1) 실험 A. 식초 적정</dd>     
+          <p>아세트산 밀도 : 1.049 g/ml</p>
+          <table onkeydown="onKeyDown()" style="margin-bottom: 0px;" id="c2">
+            <colgroup>
+              <col width="2%" />
+              <col width="1.12%" />
+              <col width="1.12%" />
+              <col width="2.28%" />
+           </colgroup>
+            <tr>
+              <td></td><td>1회</td><td>2회</td><td>계산식</td>
+            </tr>
+            <tr>
+              <td>식초의 부피 (mL)</td>
+              <td><input class="essential" id="r1"></td>
+              <td><input class="essential" id="r4"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 농도 (M)</td>
+              <td><input class="essential" id=r2></td>
+              <td><input class="essential" id=r5></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 부피 (mL)</td>
+              <td><input class="essential" id=r3></td>
+              <td><input class="essential" id=r6></td>
+              <td></td>
+            </tr>
+          </table>
+          <table style="margin-top: 0px; table-layout: fixed;">
+            <colgroup>
+              <col width="1.94%" />
+              <col width="1.13%" />
+              <col width="1.14%" />
+              <col width="1.11%" />
+              <col width="1.11%" />
+           </colgroup>
+            <tr>
+              <td>NaOH 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>식초에 포함된 Acetic acid의 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>식초에 포함된 Acetic acid의 질량 (g)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>식초에 포함된 Acetic acid 순도 (%)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+          </table>
+        </dl>
+        <dl>
+          <dd class=common_strapline>2) 실험 B. 베이킹 소다 적정</dd>     
+          <p>탄산수소 나트륨 밀도 : 84.01 g/mol</p>
+          <table onkeydown="onKeyDown()" style="margin-bottom: 0px;" id="c2">
+            <colgroup>
+              <col width="2%" />
+              <col width="1.12%" />
+              <col width="1.12%" />
+              <col width="2.28%" />
+           </colgroup>
+            <tr>
+              <td></td><td>1회</td><td>2회</td><td>계산식</td>
+            </tr>
+            <tr>
+              <td>베이킹 소다 무게 (g)</td>
+              <td><input class="essential" id=r7></td>
+              <td><input class="essential" id=r12></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HCl 농도 (M)</td>
+              <td><input class="essential" id=r8></td>
+              <td><input class="essential" id=r13></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HCl 부피 (mL)</td>
+              <td><input class="essential" id=r9></td>
+              <td><input class="essential" id=r14></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 농도 (M)</td>
+              <td><input class="essential" id=r10></td>
+              <td><input class="essential" id=r15></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 부피 (mL)</td>
+              <td><input class="essential" id=r11></td>
+              <td><input class="essential" id=r16></td>
+              <td></td>
+            </tr>
+          </table>
+          <table style="margin-top: 0px; table-layout: fixed;">
+            <colgroup>
+              <col width="1.94%" />
+              <col width="1.13%" />
+              <col width="1.14%" />
+              <col width="1.11%" />
+              <col width="1.11%" />
+           </colgroup>
+           <tr>
+            <td>HCl 몰수 (mmol)</td>
+            <td class=inStyle><a class=output>?</a></td>
+            <td class=inStyle><a class=output>?</a></td>
+            <td><a class=modi name=outmod></a></td>
+            <td><a class=modi name=outmod></a></td>
+          </tr>
+            <tr>
+              <td>NaOH 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>베이킹소다에 포함된 NaOH3와 반응한 HCL 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>베이킹소다에 포함된 NaOH3 질량 (g)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>베이킹소다에 포함된 NaOH3 순도 (%)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+          </table>
+        </dl>
+        <dl>
+          <dd class=common_strapline>3) 실험 C. 아스피린 적정</dd>     
+          <p>탄산수소 나트륨 밀도 : 180.16 g/mol</p>
+          <table onkeydown="onKeyDown()" style="margin-bottom: 0px;" id="c2">
+            <colgroup>
+              <col width="2%" />
+              <col width="1.12%" />
+              <col width="1.12%" />
+              <col width="2.28%" />
+           </colgroup>
+            <tr>
+              <td></td><td>1회</td><td>2회</td><td>계산식</td>
+            </tr>
+            <tr>
+              <td>아스피린 무게 (g)</td>
+              <td><input class="essential" id=r17></td>
+              <td><input class="essential" id=r22></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HCl 농도 (M)</td>
+              <td><input class="essential" id=r18></td>
+              <td><input class="essential" id=r23></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HCl 부피 (mL)</td>
+              <td><input class="essential" id=r19></td>
+              <td><input class="essential" id=r24></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 농도 (M)</td>
+              <td><input class="essential" id=r20></td>
+              <td><input class="essential" id=r25></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NaOH 부피 (mL)</td>
+              <td><input class="essential" id=r21></td>
+              <td><input class="essential" id=r26></td>
+              <td></td>
+            </tr>
+          </table>
+          <table style="margin-top: 0px; table-layout: fixed;">
+            <colgroup>
+              <col width="1.94%" />
+              <col width="1.13%" />
+              <col width="1.14%" />
+              <col width="1.11%" />
+              <col width="1.11%" />
+           </colgroup>
+           <tr>
+            <td>HCl 몰수 (mmol)</td>
+            <td class=inStyle><a class=output>?</a></td>
+            <td class=inStyle><a class=output>?</a></td>
+            <td><a class=modi name=outmod></a></td>
+            <td><a class=modi name=outmod></a></td>
+          </tr>
+            <tr>
+              <td>NaOH 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>아스피린에 포함된 Acetylsalicylic와 반응한 NaOH 몰수 (mmol)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>아스피린에 포함된 Acetylsalicylic 질량 (g)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+            <tr>
+              <td>아스피린에 포함된 Acetylsalicylic 순도 (%)</td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td class=inStyle><a class=output>?</a></td>
+              <td><a class=modi name=outmod></a></td>
+              <td><a class=modi name=outmod></a></td>
+            </tr>
+          </table>
+        </dl>
+        <dl>
+          <center>
+            <button class=submit_button onclick="submit4_1()">계산하기</button>
+            <button class=clear_button onclick="clear_all()">초기화</button>
+         </center>
+        </dl> 
+    </div>
+    <div class=footer>
+      <p>contact me : yheewon@yonsei.ac.kr</p>
+      <p>해당 사이트는 오차가 있을 수 있으니 참고용으로만 쓰시길 바랍니다.</p>
+    </div>
+  </body>
+</html>

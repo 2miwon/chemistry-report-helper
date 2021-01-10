@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>일반/공학화학 및 실험 계산기</title>
+    <link href="css\style_common.css" rel="stylesheet" type="text/css"></link>
+    <link href="css\style_page.css" rel="stylesheet" type="text/css"></link>
+    <link rel="shortcut icon" href="res\makefg.png"></link>
+    <script src="src\src_common.js"></script>
+    <a id=pagenum name=3></a>
+    <!--mathjax.js-->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class=header>
+        <h2 id=small_headline>아보가드로수의 결정</h2>
+        <h1 id=headline>일반·공학화학 및 실험(1)</h1>
+    </div>
+    <div class=block>
+        <dl>
+          <dt class=common_heading>실험 결과</dt>
+          <dd class=common_strapline>1) 측정결과</dd>     
+        </dl>
+        <dl>
+          <table onkeydown="onKeyDown()" id="c3">
+            <colgroup>
+               <col width="1%" />
+               <col width="1%" />
+               <col width="1%" />
+               <col width="1%" />
+            </colgroup>
+            <tr>
+              <th></th><th>첫 번째 실험</th><th>두 번째 실험</th><th>세 번째 실험</th>
+            </tr>
+            <tr>
+              <th>구리 전극의 반응 전 무게 (g)</th><td><input class=essential id=r1></td><td><input class=essential id=r5></td><td><input class=essential id=r9></td>
+            </tr>
+            <tr>
+              <th>구리 전극의 반응 후 무게 (g)</th><td><input class=essential id=r2></td><td><input class=essential id=r6></td><td><input class=essential id=r10></td>
+            </tr>
+            <tr>
+              <th>감소한 구리의 질량 (g)</th><td class=inStyle><p class=output>?</p></td><td class=inStyle><p class=output>?</p></td><td class=inStyle><p class=output>?</p></td>
+            </tr>
+            <tr>
+              <th>평균 전류값 (A)</th><td><input class=essential id=r3></td><td><input class=essential id=r7></td><td><input class=essential id=r11></td>
+            </tr>
+            <tr>
+              <th>전류가 흐른 시간 (sec)</th><td><input class=essential id=r4></td><td><input class=essential id=r8></td><td><input class=essential id=r12></td>
+            </tr>
+          </table>
+        </dl>
+        <dl>
+          <dd class=common_strapline>2) 3회의 반복 실험에서 반응 중에 통과한 전하량(C)를 각각 계산하여라. (유효숫자 주의)</dd>
+          <p class=modi name=m_amp>$$전하량 (C) = 전류(A) \ast 시간(sec) $$</p>
+          <p class=inStyle>첫 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> C</p>
+          <p class=inStyle>두 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> C</p>
+          <p class=inStyle>세 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> C</p>
+        </dl>
+        <dl>
+          <dd class=common_strapline>3) 위의 문제 2)의 답을 사용하여 각각의 경우 반응에 참여한 전자 수를 계산하여라.|
+            <br>(참고: 전자 1개의 전하는 1.602*10-19 C, 유효숫자 주의)</dd>
+          <p class=modi>$$반응에 참여 한 전자의 수 = \frac{전체 전하량(C)}{전자 1개의 전하량(C)} $$</p>
+          <p class=inStyle>첫 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>두 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>세 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+        </dl>
+        <dl>
+          <dd class=common_strapline>4) 3회의 실험에서 반응 후 감소한 구리 원자의 수를 각각 계산하여라.
+            <br>(참고: 전기분해과정에서 구리 이온(Cu2+)을 생성하는 데 두개의 전자가 필요함, 유효숫자 주의)</dd>
+          <p class=modi>$$감소한 구리 원자의 수 = \frac{반응의 참여한 전자수}{2} $$</p>
+          <p class=inStyle>첫 번째 실험: <a class=output>?</a> 개</p>
+          <p class=inStyle>두 번째 실험: <a class=output>?</a> 개</p>
+          <p class=inStyle>세 번째 실험: <a class=output>?</a> 개</p>
+        </dl>
+        <dl>
+          <dd class=common_strapline>5) 측정 결과와 문제 4)의 값을 바탕으로 감소한 구리 원자 하나의 질량을 각각 구하여라.
+            <br>(전자의 무게는 무시한다, 유효숫자 주의)</dd>
+          <p class=modi>$$구리 원자 하나의 질량 = \frac{감소한 구리의 질량}{감소한 구리 원자 수} $$</p>
+          <p class=inStyle>첫 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>두 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>세 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+        </dl>
+        <dl>
+          <dd class=common_strapline>6) 3회의 실험에서 1 mol의 구리에 들어있는 원자 수를 각각 계산하고 이론적인 아보가드로 수와 비교하여 오차율을 구하여라(유효숫자 주의).</dd>
+          <p class=modi>$$구리 원자 하나의 질량 = \frac{감소한 구리의 질량}{감소한 구리 원자 수} $$</p>
+          <p class=modi name=m_erate>$$오차율 = \frac{|이론값 - 측정값|}{이론값} $$</p>
+          <p>이론적인 가보가드로 수 : $6.022 * 10^{23}$ , 구리의 몰질량 : 63.55 (g)</p>
+          <p class=inStyle>첫 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>첫 번째 실험 오차율: <a class="modi" name=outmod></a><a class=output>?</a> %</p>
+          <p class=inStyle>두 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>두 번째 실험 오차율: <a class="modi" name=outmod></a><a class=output>?</a> %</p>
+          <p class=inStyle>세 번째 실험: <a class=modi name=outmod></a><a class=output>?</a> 개</p>
+          <p class=inStyle>세 번째 실험 오차율: <a class="modi" name=outmod></a><a class=output>?</a> %</p>
+        </dl>
+        <dl>
+          <center>
+            <button class=submit_button onclick="submit3_1()">계산하기</button>
+            <button class=clear_button onclick="clear_all()">초기화</button>
+         </center>
+        </dl>
+    </div>
+    <div class=footer>
+      <p>contact me : yheewon@yonsei.ac.kr</p>
+      <p>해당 사이트는 오차가 있을 수 있으니 참고용으로만 쓰시길 바랍니다.</p>
+    </div>
+  </body>
+</html>

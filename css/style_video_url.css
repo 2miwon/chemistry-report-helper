@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+a{
+  font-size: 25px;
+}
+
+
+table, tr, th {
+  border:1px solid black;
+  border-collapse: collapse;
+  table-layout: auto;
+  text-align: left;
+  height: 30px;
+  font-family: '나눔바른고딕';
+}
+
+
+#collection{
+  font-family: '나눔바른고딕';
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.collection_table{
+  border:1px solid black;
+  border-collapse: collapse;
+  width:75%;
+}
+
+.collection_content{
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  line-height: 2.5;
+  font-size: 25px;
+}
+
+.collection_caption{
+  font-size: 25px;
+  font-family: '나눔고딕';
+  margin: 2px;
+  line-height: 3;
+  align-content: left;
+}

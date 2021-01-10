@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+table, tr, th {
+  border:1px solid black;
+  border-collapse: collapse;
+  table-layout: auto;
+  text-align: left;
+  height: 30px;
+  padding-left: 20px;
+  font-family: '나눔바른고딕';
+}
+
+
+#headline{
+  color:white;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 1.8;
+  /*padding-top: 60px; 일반,공학화학및실험계산기 한줄일때*/
+  /*padding-right: 170px;*/
+}
+
+
+#notice{
+  font-family: '나눔바른고딕';
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.notice_table{
+  border:1px solid black;
+  border-collapse: collapse;
+  width:75%;
+}
+
+.notice_content{
+  list-style-type:none;
+  line-height: 2.2;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.notice_caption{
+  font-size: 25px;
+  font-family: '나눔고딕';
+  margin: 2px;
+  line-height: 3;
+}
+
+
+.left_block{
+  width:28%;
+  margin-left: 20%;
+  margin-top: 50px;
+  float:left;
+}
+
+.right_block{
+  width:28%;
+  margin-right: 20%;
+  margin-top: 50px;
+  float:right;
+}
+
+.contents_caption{
+  font-size: 25px;
+  font-family: '나눔고딕';
+  margin: 2px;
+  line-height: 3;
+}
+
+.block_content{
+  list-style-type: circle;
+  line-height: 3;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#contents{
+  overflow:hidden;
+}

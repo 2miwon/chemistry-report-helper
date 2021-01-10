@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>일반/공학화학 및 실험 계산기</title>
+    <link href="css\style_common.css" rel="stylesheet" type="text/css"></link>
+    <link href="css\style_page.css" rel="stylesheet" type="text/css"></link>
+    <link rel="shortcut icon" href="res\makefg.png"></link>
+    <script src="src\src_common.js"></script>
+    <!--mathjax.js-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <a id=pagenum name=2></a>
+  </head>
+
+  <body>
+    <div class=header>
+        <h2 id=small_headline>재결정과 거르기</h2>
+        <h1 id=headline>일반·공학화학 및 실험(1)</h1>
+    </div>
+    <div class=block>
+        <dl onkeydown="onKeyDown()">
+        <dt class=common_heading>실험 결과</dt>
+          <dd class=common_strapline>가) 실험 A</dd>
+          <p class=inStyle>1) 투여한 아세트아닐라이드의 무게 : <input class=essential id=r1> g</p>    
+          <p class=inStyle>2) 실험 A에서 얻은 아세트아닐라이드의 무게 : <input class=essential id=r2> g</p>
+        </dl>
+        <dl onkeydown="onKeyDown()">
+          <dd class=common_strapline>나) 실험 B</dd>
+          <p class=inStyle>1) 투여한 벤조산의 무게 : <input class=essential id=r3> g</p>
+          <p class=inStyle>2) 실험 B에서 얻은 벤조산의 무게 : <input class=essential id=r4> g</p>
+        </dl>
+        <dl onkeydown="onKeyDown()">
+          <dd class=common_strapline>다) 수득율 (아세트아닐라이드, 벤조산 각각)</dd>
+          <p class=modi name=m_yield>$$수득률 (\%) = \frac{실제로 얻은양}{이론상 얻은양} \ast 100 $$</p>
+          <p class=inStyle>아세트아닐라이드 : </p>
+          <p class=outStyle><a class=output id=per_ase>?</a> %</p>  
+          <p class=modi name=m_yield>$$수득률 (\%) = \frac{실제로 얻은양}{이론상 얻은양} \ast 100 $$</p>
+          <p class=inStyle>벤조산 : </p>
+          <p class=outStyle><a class=output id=per_ven>?</a> %</p>
+        </dl>
+        <dl>
+          <center>
+            <button class=submit_button onclick="submit2_1()">계산하기</button>
+            <button class=clear_button onclick="clear_all()">초기화</button>
+         </center>
+        </dl>
+    </div>
+    <div class=footer>
+      <p>contact me : yheewon@yonsei.ac.kr</p>
+      <p>해당 사이트는 오차가 있을 수 있으니 참고용으로만 쓰시길 바랍니다.</p>
+    </div>
+  </body>
+</html>
